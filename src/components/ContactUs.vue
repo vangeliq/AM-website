@@ -2,32 +2,31 @@
     <div class="contact">
         <h1> Contact Us</h1>
 
-        <h3>Request Something</h3>
+        <h3>Request AM Keycloak Integration</h3>
 
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-        </p>
+If you would like to request AM Keycloak Integration, please click here. If you would like more information regarding our services, or have any questions related to our business and onboarding process, feel free to reach out to us via email:
+
+     </p>
 
         <ul>
-            <li>someone@gmail.com</li>
-            <li>someone@gmail.com</li>
+            <li>nick.mccue@cgi.com</li>
+            <li>Andrew.Dennison@gov.bc.ca</li>
         </ul>
 
-        <h3> Request for some other business</h3>
+        <h3>Ask Us Technical Questions</h3>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
+If you already have AM Keycloak Integration and would like to ask us technical questions, please reach out to us email:        </p>
         
         <ul>
-            <li>someone@gmail.com</li>
-            <li>someone@gmail.com</li>
-            <li>someone@gmail.com</li>
-            <li>someone@gmail.com</li>
+            <li>trevor.schiavone@cgi.com</li>
+            <li>adam.hoplock@cgi.com</li>
+            <li>david.a.sharpe@cgi.com</li>
         </ul>
 
-        <h3> Request for some other business</h3>
+        <h3> Hours of Operation</h3>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            The IAM team will respond to service requests and perform service activities from Monday through Friday during regular business hours (excluding statutory holidays)
         </p>
     </div>
 </template>

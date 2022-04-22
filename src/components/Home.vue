@@ -1,6 +1,5 @@
 <script>
 import CollapsibleItem from './CollapsibleItem.vue'
-import TheWelcome from './TheWelcome.vue';
 export default{
     data() {
         return {
