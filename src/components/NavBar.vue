@@ -1,14 +1,7 @@
 
 <script>
 import Home from './Home.vue'
-import About from './About.vue'
 import ContactUs from './ContactUs.vue'
-
-const routes = {
-  '/': Home,
-  '/about': About,
-  '/contactus': ContactUs
-}
 
 export default {
   data() {
@@ -34,7 +27,6 @@ export default {
     <div class="container">
         <ul>
           <li ><a href="#/" class= "($route.name == 'Home' ? 'active' : 'inactive'">Home</a></li>
-          <li><a href="#/about" class= "($route.name == 'About' ? 'active' : 'inactive'">About</a></li>
           <li><a href="#/contact-us" class= "($route.name == 'ContactUs' ? 'active' : 'inactive'">Contact Us</a></li>
         </ul>
       </div>

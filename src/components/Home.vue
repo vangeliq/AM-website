@@ -4,7 +4,8 @@ import TheWelcome from './TheWelcome.vue';
 export default{
     data() {
         return {
-            ExpandAbout:false
+            ExpandAbout:false,
+            ExpandFAQ:false
         };
     },
     methods: {
@@ -24,8 +25,7 @@ export default{
           <div class="hook">
             <h1 class="title"> The AM Keycloak Vision </h1>
             <p class="quote">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-            </p>
+Providing patients and providers ready access to the online resources they need and protecting resources from unauthorized requests            </p>
             <p>
                 <a class="btn-request-integration" href="#/request-integration">
                     Request Keycloak Integration
@@ -48,21 +48,90 @@ export default{
                
                 <div class="list">
                     <CollapsibleItem :expandSection=ExpandAbout>
-                    <template #question>Title</template>
+                    <template #question>What is AM/IDAM Keycloak?
+</template>
                     <template #answer>
-                        Vue’s
-                        <a target="_blank" href="https://vuejs.org/">official documentation</a>
-                        provides you with all information  need to get started.
+                        AM aims to develop and implement reusable user access management solutions (authentication and authorization). The project’s IAM Solutions are designed to provide users with a standardized method to securely access Ministry of Health and Health Sector partner applications.
                     </template>
                     </CollapsibleItem>
                     <CollapsibleItem :expandSection=ExpandAbout>
-                        <template #question>Title</template>
+                        <template #question>Benefits</template>
                         <template #answer>
-                            Vue’s
-                            <a target="_blank" href="https://vuejs.org/">official documentation</a>
-                            provides you with all information  need to get started.
+                            <b>Ministry of Health IDAM Standards:</b>
+                            <br>
+                            All IAM solutions are governed by the MoH IDAM strategic plan and compliant with MoH IDAM standards
+                            <br><br>
+                            <b>Open Source Technology:</b>
+                            <ul>
+                                <li> No licensing cost</li>
+                                <li>Easier to implement technology enhancements</li>
+                                <li>Rich in technical capabilities, which means a wide variety of identification and access management requirements can be met.</li>
+                            </ul>
+                            <br>
+                            <b>(Expert) IAM project Team :</b>
+                            <br>
+                            Extensive access management skills and experience that client’s can leverage as needed and utilizes an Agile development approach, which reduces time for implementation.
                         </template>
                     </CollapsibleItem>
+                    <CollapsibleItem :expandSection=ExpandAbout>
+                        <template #question>Service Levels</template>
+                        <template #answer>
+                            The IAM team will respond to service requests and perform service activities from Monday through Friday during regular business hours (excluding statutory holidays)
+
+                        </template>
+                    </CollapsibleItem>
+                    <CollapsibleItem :expandSection=ExpandAbout>
+                        <template #question>Why AM? Why Not AM?</template>
+                        <template #answer>
+                            As we use keycloak, we can do Identity Brokering, Common Login Page, Single sign-on (SSO),Role Management,OpenID (OAuth), Account Linking, Service Accounts and UMA. 
+                            <br>
+                            We do not want to create a new type of credential, provide direct access to Identity Providers, and store passwords.
+                        </template>
+                    </CollapsibleItem>
+                </div>
+            </div>
+            <div class="collapsible">
+                                <h3 class="title">FAQ</h3>
+                <ul class = "links">
+                    <li v-on:click="this.ExpandFAQ = false">Collapse All</li>
+                    <li v-on:click="this.ExpandFAQ = true">Expand All</li>
+                </ul>
+               
+                <div class="list">
+                    <CollapsibleItem :expandSection=ExpandFAQ>
+                        <template #question>What does the architecture look like?</template>
+                        <template #answer>
+                            we have a simple diagram showing: Identity Providers -> Keycloak -> Applications
+                        </template>
+                    </CollapsibleItem>
+                    <CollapsibleItem :expandSection=ExpandFAQ>
+                        <template #question>Which Identity provider?</template>
+                        <template #answer>
+                            Several identity providers (IDP) are currently compatible with KeyCloak. The process for integrating these providers, which will be discussed in the IAM Process section, is the same. The following table provides an overview of User Communities, IDP’s and detail around ID Assurance Levels to be considered by the application Business Area team:
+                            
+                            
+                            Provide a simple table that shows different IDPS.
+                        </template>
+                    </CollapsibleItem>
+                    <CollapsibleItem :expandSection=ExpandFAQ>
+                        <template #question>What's the process for updating my client?</template>
+                        <template #answer>
+                            If you would like to update your client, please contact us directly so that we can discuss this further.
+                        </template>
+                    </CollapsibleItem>
+                    <CollapsibleItem :expandSection=ExpandFAQ>
+                        <template #question>What is the process for user management?	</template>
+                        <template #answer>
+                            We should have a page about access teams and ministry guidelines (wiki/guide page).For more information, visit this page. 
+                        </template>
+                    </CollapsibleItem>
+                    <CollapsibleItem :expandSection=ExpandFAQ>
+                        <template #question>Is multi-factor authentication supported? Does my application need it?</template>
+                        <template #answer>
+                            Yes, MFA is supported. TBD: answer the second question
+                        </template>
+                    </CollapsibleItem>
+
                 </div>
             </div>
         </div>
@@ -78,17 +147,11 @@ export default{
     /* padding: 10px 0; */
 }
 
-.hook {
-    /* background-color:red; */
-    /* padding:10px; */
-    /* min-width:-webkit-fill-available; */
-    margin-bottom: 20px;;
-}
 
 .hook .title {
     /* background-color:greenyellow; */
     max-width:350px;
-        color: #003366;
+    color: #003366;
 
 }
 
@@ -115,10 +178,12 @@ export default{
 hr{
     color: #b2b2b2;
 }
-
+.collapsible{
+    margin: 30px 0;
+}
 
  .collapsible .title{
-    font-size: large;
+    font-size: 25px;
 }
  .collapsible .links{
 /* background: #b2b2b2; */
@@ -127,12 +192,7 @@ hr{
   flex-wrap: wrap  
 }
 .collapsible .links li{
-    /* background: yellow; */
-
     color: #003366;
-    /* height: 25px; */
-    /* line-height: 40px; */
-    /* vertical-align: top; */
     font-weight: bold;
     font-size: 11px;
     margin: 0px 7px 0px 0px;
@@ -140,12 +200,18 @@ hr{
 
 
 .collapsible .links li:hover{
-    /* background: yellow; */
     text-decoration: underline;
 }
 
  .collapsible .list {
     max-width:800px;
+}
+.collapsible .list ul{
+    margin: 0 0px 0 15px;
+}
+
+.collapsible .list li{
+    list-style:disc;
 }
 
 </style>
