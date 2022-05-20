@@ -26,14 +26,10 @@ export default{
             <p class="quote">
 Providing patients and providers ready access to the online resources they need and protecting resources from unauthorized requests            </p>
             <p>
-                <a class="btn-request-integration" href="#/request-integration">
-                    Request Keycloak Integration
-                </a>
+                <a class="btn-request-integration"><router-link to="/request-integration">Request Keycloak Integration</router-link></a>
+
             </p>
-            <!-- <a class="btn-request-integration" href="#/request-integration">
-                Request Keycloak Integration
-            </a> -->
-            
+        
             <hr size="" width="" color="">  
         </div>
 
@@ -143,23 +139,20 @@ Providing patients and providers ready access to the online resources they need 
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
-    /* padding: 10px 0; */
 }
 
 
 .hook .title {
-    /* background-color:greenyellow; */
     max-width:350px;
     color: #003366;
 
 }
 
 .hook .quote{
-    /* background-color:aquamarine; */
     max-width:550px; 
 }
 
-.hook .btn-request-integration{
+.hook .btn-request-integration a{
     background-color:#003366;
     color: white;
     padding: 7px 13px;
@@ -185,7 +178,6 @@ hr{
     font-size: 25px;
 }
  .collapsible .links{
-/* background: #b2b2b2; */
   padding: 0;
   display: flex;
   flex-wrap: wrap  

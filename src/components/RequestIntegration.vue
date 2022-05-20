@@ -3,12 +3,15 @@
         <h1>AM Keycloak Integration Request</h1>
         
         <div class="highlight">
-            <img src="./Exclamation.png" width="40">
+            <fa class="exclamation" icon="circle-exclamation"/>
             <p>If you’re looking for more information on access management services and capabilities, please request an info session w the access management team. Before this session, please fill out the following form. </p>
-            <a href="#/request-integration/instructions">+ Request a session with the AM team</a>
+            <a><router-link to="/integration-instructions">+ Request a session with the AM team</router-link></a>
         </div>
         <div class="information">
             <h3>Standard Funding Model</h3>
+            <p>
+                The IAM team and IDAM PMO has an established standard funding model which outlines the funding requirements of the IAM team and Client Application business area. This funding model may be adjusted on an application-by-application basis. The following information serves as a baseline, and guideline for the business area. Effort and funding requirements will need to be concretely established in the Engagement & Kick-off phases.
+            </p>
             
             <table>
                 <thead>
@@ -93,8 +96,12 @@
 
 }
 
-.highlight img {
+.highlight .exclamation {
     margin: 15px;
+    font-size: 40px;
+    color:#003366;
+    background-color: white;
+    border-radius: 20px;
 }
 
 .highlight p {
@@ -114,14 +121,20 @@
     text-decoration: none;
 
     }
+.information p{
+    max-width: 900px;
+    text-align: justify;
 
+}
 .information h3 {
     margin: 20px 0;
     font-weight: bold;
+
 }
 
 table  {
     font-size:14px ;
+    margin: 40px 0 0 0;
     /* background-color: #FCBA19; */
 }
 

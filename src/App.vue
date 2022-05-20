@@ -1,7 +1,7 @@
 <script setup>
-import NavBar from './components/NavBar.vue'
-import Header from './components/Header.vue'
-import Footer from './components/Footer.vue'
+import TheNavBar from './components/template/TheNavBar.vue'
+import TheHeader from './components/template/TheHeader.vue'
+import TheFooter from './components/template/TheFooter.vue'
 
 </script>
 
@@ -15,16 +15,10 @@ import RequestIntegration from './components/RequestIntegration.vue'
 import IntegrationInstructions from './components/IntegrationInstructions.vue'
 
 
-const routes = {
-  '/': Home,
-  '/contact-us': ContactUs,
-  '/request-integration': RequestIntegration,
-  '/request-integration/instructions': IntegrationInstructions
-}
-
 
 export default {
-  components: { Footer },
+  name: 'App',
+  components: { Footer: TheFooter },
   data() {
     return {
       currentPath: window.location.hash
@@ -46,16 +40,16 @@ export default {
 
 <template>
   <header>
-    <Header />
-    <NavBar />
-  
+    <TheHeader />
+    <TheNavBar />
   </header>
 
   <main>
-    <component :is="currentView" />
+    <router-view/>
+    <!-- <component :is="currentView" /> -->
   </main>
 
-    <Footer />
+    <TheFooter />
 </template>
 
 <style src=./assets/css/main.css></style>

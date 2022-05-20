@@ -22,8 +22,10 @@ export default{
       <p>
         <slot name="question" ></slot>
       </p>
-      <!-- <p class="padding"></p> -->
-    <img :class="ExpandContent && rotate" src="./Dropdown-Arrow.png" width="30">
+      <span class="icon">
+      <fa :class="ExpandContent && rotate" icon="angle-down" />
+      
+      </span>
     </div> 
     <div class = "answer">
       <p :class="ExpandContent? 'visible':'hidden'">
@@ -39,7 +41,7 @@ export default{
 <style scoped>
 .question{
     background-color: #EAEAEA;
-    padding: 10px 20px;
+    padding: 0px 20px;
     margin: 10px 0 0 0;
     display: flex;
     align-items: center;
@@ -55,9 +57,12 @@ export default{
     font-weight: bold;
 }
 
-.question img,
+.question .icon,
 .question .rotate{
     transition: all 0.5s;
+    font-size: 40px;
+     color:#c4c4c4;
+     padding:0
 }
 
 .question .rotate{

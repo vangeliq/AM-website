@@ -3,8 +3,8 @@
     <div id="header">
       <section class="container">
         <section class="identity">
-        <img alt="BC Government Logo" class="logo" src="./logo.png" width="154" />
-          <div class="sitename">IDAM Strategy - Access Management Services </div>
+        <img alt="BC Government Logo" class="logo" src="..\..\..\src\assets\images\logo.png" width="154" />
+          <div class="sitename">MoH Access Management </div>
         </section>
         
         <section class="options user-select-off">
