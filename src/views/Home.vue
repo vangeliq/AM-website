@@ -1,5 +1,5 @@
 <script>
-import CollapsibleItem from './CollapsibleItem.vue'
+import CollapsibleItem from '../components/CollapsibleItem.vue'
 export default{
     data() {
         return {

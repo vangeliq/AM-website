@@ -1,6 +1,6 @@
 
 <script>
-import Home from '../Home.vue'
+import Home from '../../views/Home.vue'
 import ContactUs from '../ContactUs.vue'
 
 export default {

@@ -8,7 +8,7 @@ import TheFooter from './components/template/TheFooter.vue'
 <script>
 
 
-import Home from './components/Home.vue'
+import Home from './views/Home.vue'
 import CollapsibleItem from './components/CollapsibleItem.vue'
 import ContactUs from './components/ContactUs.vue'
 import RequestIntegration from './components/RequestIntegration.vue'
